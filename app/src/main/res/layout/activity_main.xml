@@ -5,7 +5,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
+
 
     <TextView
         android:layout_width="253dp"
@@ -49,6 +51,18 @@
         app:srcCompat="@drawable/search"
         tools:layout_editor_absoluteX="300dp"
         tools:layout_editor_absoluteY="310dp" />
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="93dp"
+        android:layout_height="94dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="2dp"
+        android:contentDescription="notes"
+        android:cropToPadding="false"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/notes"
+        tools:layout_editor_absoluteX="300dp"
+        tools:layout_editor_absoluteY="310dp" />
 
-
-</RelativeLayout>
+    </RelativeLayout>

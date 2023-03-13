@@ -12,6 +12,39 @@
         android:theme="@style/Theme.Plantcenterapp"
         tools:targetApi="31">
         <activity
+            android:name=".WeekViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HourEvent"
+            android:exported="false" />
+        <activity
+            android:name=".HourAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".EventEditActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EventAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".Event"
+            android:exported="false" />
+        <activity
+            android:name=".DailyCalendarActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CalendarViewHolder"
+            android:exported="false" />
+        <activity
+            android:name=".CalendarAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".CalendarUtils"
+            android:exported="false" />
+        <activity
+            android:name=".Notes"
+            android:exported="false" />
+        <activity
             android:name=".Search"
             android:exported="false" />
         <activity
