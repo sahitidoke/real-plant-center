@@ -9,29 +9,25 @@
     tools:context=".MainActivity">
 
 
-    <TextView
-        android:layout_width="253dp"
-        android:layout_height="123dp"
-        android:layout_centerInParent="false"
-        android:fontFamily="@font/archivo_black"
-        android:text="Plant Center"
-        android:textAlignment="center"
-        android:textColorLink="#FF03DAC5"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.129"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.072" />
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="39dp"
+        android:background="#78B19D"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:buttonGravity="bottom" />
 
     <ImageButton
         android:id="@+id/imageButton"
         android:layout_width="93dp"
         android:layout_height="94dp"
         android:layout_alignParentRight="true"
-        android:contentDescription="profile"
+        android:layout_marginRight="166dp"
 
+        android:contentDescription="profile"
         android:cropToPadding="false"
         android:scaleType="fitCenter"
         app:srcCompat="@drawable/profile"
@@ -40,29 +36,46 @@
 
     <ImageButton
         android:id="@+id/imageButton2"
-        android:layout_width="93dp"
-        android:layout_height="94dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginRight="2dp"
+        android:layout_marginRight="20dp"
         android:contentDescription="search"
         android:cropToPadding="false"
         android:scaleType="fitCenter"
         app:srcCompat="@drawable/search"
         tools:layout_editor_absoluteX="300dp"
         tools:layout_editor_absoluteY="310dp" />
+
     <ImageButton
         android:id="@+id/imageButton3"
-        android:layout_width="93dp"
-        android:layout_height="94dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginRight="2dp"
+        android:layout_marginLeft="20dp"
         android:contentDescription="notes"
         android:cropToPadding="false"
+        android:paddingHorizontal="10dp"
         android:scaleType="fitCenter"
-        app:srcCompat="@drawable/notes"
+        app:srcCompat="@drawable/notepad"
         tools:layout_editor_absoluteX="300dp"
         tools:layout_editor_absoluteY="310dp" />
 
-    </RelativeLayout>
+    <ImageButton
+        android:id="@+id/homeButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="168dp"
+        android:layout_marginBottom="0dp"
+        android:cropToPadding="false"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/homebutt"
+        tools:layout_editor_absoluteX="300dp"
+        tools:layout_editor_absoluteY="310dp" />
+
+</RelativeLayout>

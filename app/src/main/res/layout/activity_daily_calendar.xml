@@ -28,12 +28,12 @@
         <TextView
             android:id="@+id/monthDayText"
             android:layout_width="0dp"
-            android:layout_weight="2"
             android:layout_height="wrap_content"
-            android:text="Feb 2021"
-            android:textSize="20sp"
+            android:layout_weight="2"
+            android:text="Feb 2023"
             android:textAlignment="center"
-            android:textColor="@color/black"/>
+            android:textColor="@color/black"
+            android:textSize="20sp" />
 
         <Button
             android:layout_width="0dp"
@@ -61,13 +61,13 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Event"
-        android:textColor="@color/blue"
-        android:background="@null"
-        android:textStyle="bold"
-        android:onClick="newEventAction"
         android:layout_gravity="center"
-        android:textSize="20sp"/>
+        android:background="@null"
+        android:onClick="newEventAction"
+        android:text="New Event"
+        android:textColor="#78B19D"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
     <ListView
         android:id="@+id/hourListView"
